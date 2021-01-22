@@ -10,8 +10,6 @@ export class ApiService {
   constructor(private hc: HttpClient) {}
 
   getDataTest(): Observable<any> {
-    return this.hc.get(
-      `http://slowwly.robertomurray.co.uk/delay/16000/url/http://dummy.restapiexample.com/api/v1/employees`
-    );
+    return this.hc.get(`https://jsonplaceholder.typicode.com/posts`);
   }
 }
