@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
 
   getApiData() {
     // setTimeout(() => {
-    this.as.getDataTest().subscribe();
+    this.as.getDataTest();
     // }, 15000);
   }
 }
