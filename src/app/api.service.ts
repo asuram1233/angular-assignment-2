@@ -10,6 +10,6 @@ export class ApiService {
   constructor(private hc: HttpClient) {}
 
   getDataTest(): Observable<any> {
-    return this.hc.get(`https://jsonplaceholder.typicode.com/posts`);
+    return this.hc.get(`https://jsonplaceholder.typicode.com/post`);
   }
 }
