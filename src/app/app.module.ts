@@ -10,7 +10,7 @@ import { DEFAULT_TIMEOUT, TimeoutInterceptor } from "./timeout-interceptor";
   imports: [BrowserModule, HttpClientModule],
   providers: [
     [{ provide: HTTP_INTERCEPTORS, useClass: TimeoutInterceptor, multi: true }],
-    [{ provide: DEFAULT_TIMEOUT, useValue: 100 }]
+    [{ provide: DEFAULT_TIMEOUT, useValue: 15000 }]
   ],
   bootstrap: [AppComponent]
 })
