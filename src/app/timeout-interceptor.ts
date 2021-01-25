@@ -3,8 +3,7 @@ import {
   HttpInterceptor,
   HttpEvent,
   HttpHandler,
-  HttpRequest,
-  HttpErrorResponse
+  HttpRequest
 } from "@angular/common/http";
 import { Observable, throwError } from "rxjs";
 import { catchError, timeout } from "rxjs/operators";
